@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+    "userId": 1,
+    "id": 1,
+    "title": "67th Wolf777news Filmfare Awards 2022",
+    "body": "The Filmfare Awards are presented annually by The Times Group to honour both artistic and technical excellence of professionals in the Hindi language film industry of India. The Filmfare ceremony is one of the oldest film events in India. The awards were first introduced in 1954, the same year as the National Film Awards. "
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Sunburn Arena ft. DJ SNAKE - Mumbai",
+    "body": "The biggest Sunburn Arena tour of the season is here! Catch the one and only DJ Snake perform an exclusive 6 city tour across India this November! "
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "Kumar Sanu Live In Concert (Geeton Ka Karwan-3)",
+    "body": "On the 16th of September, RJ Event Management brings you all an on-stage experience that has been a rare sight for the past 3 years. That's right, Kumar Sanu is taking the stage once again and we cannot wait to see him perform live!"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "TCC Bandra: Very Late Night Comedy",
+    "body": "Very Late Night Comedy is our signature show that features 6 Club Comedians every weekend. The show may or may not be headlined by a very famous Comedian."
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "Indian Sneaker Convention",
+    "body": "The Indian Sneaker convention is a one-of-a-kind sneaker and streetwear convention featuring some of the biggest designers, artists and musicians in the country on the 3rd of September 2022."
+  }
+  ]
+}
