@@ -1,0 +1,41 @@
+﻿@model IEnumerable<TheLaptopShop.ViewModel.ShoppingCartModel>
+@{
+    ViewBag.Title = "ShoppingCart";
+    decimal TotalAmount = 0.00M;
+}
+
+<h2>ShoppingCart</h2>
+
+<table class="table table-condensed" style="width: 100%">
+    @foreach(var item in Model)
+    {
+        TotalAmount += item.Total;
+        <tr>
+            <td>
+                <img src="@Url.Content(item.Image_Path)" height="50px" width="50px" class="img-rounded" />
+            </td>
+            <td>
+                @item.Item_Name
+            </td>
+            <td style="text-align: right">
+                @item.Quantity.ToString(format: "#,##0")
+            </td>
+            <td style="text-align: right">
+                @item.UnitPrice.ToString(format: "#,##0.00")
+            </td>
+            <td style="text-align: right">
+                @item.Total.ToString(format: "#,##0.00")
+            </td>
+        </tr>
+    }
+    <tr style="border-top: 2px solid maroon">
+        <td colspan="4" style="text-align: right">
+            <h3>Total Amount</h3>
+        </td>
+        <td style="text-align: right">
+            <h3>@TotalAmount.ToString(format: "#,##0.00")</h3>
+        </td>
+    </tr>
+</table>
+
+
