@@ -1,0 +1,35 @@
+﻿@page
+@model PizzaPortal.Pages.CheckoutModel
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<i><h1 style="text-align:center; color:purple;">@ViewData["Title"]</h1></i>
+
+<div >
+    <form style="background-color:burlywood; margin-bottom:15px;">
+
+        <div class="form-group" style="margin-left:25px;margin-top:15px;">
+            <label for="Name">Name</label>
+            <textarea rows="5" cols="40" style="width:250px; height:50px;" class="form-control" id="Name" placeholder=""></textarea>
+        </div>
+        <div class="form-group" style="margin-left:25px;margin-top:15px;">
+            <label for="Phone">Phone number</label>
+            <textarea rows="5" cols="40" style="width:250px; height:50px;" class="form-control" id="Phone" placeholder=""></textarea>
+        </div>
+        <div class="form-group" style="margin-left:25px;margin-top:15px;">
+            <label for="Address"> Delivery Address</label>
+            <textarea rows="5" cols="40" style="width:1000px; height:150px;" class="form-control" id="Address" placeholder=""></textarea>
+        </div>
+        <button type="button" class="btn btn-success" style="margin-left:25px; margin-bottom:15px;margin-top:25px;background-color:purple;">Pay : @Model.Total </button>
+    </form>
+
+</div>
+<br />
+<br />
+<div>
+    <H3 align="center">Thank you for shopping with us !!</H3>
+</div>
+
+
+

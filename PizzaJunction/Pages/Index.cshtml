@@ -1,0 +1,58 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <H1> Pizza Junction Offers you with different type of Pizza's</H1>
+</div>
+
+<br />
+
+<div class="container d-flex flex-wrap"  style="margin-bottom:15px;">
+
+    @foreach (var product in Model.Products)
+    {
+@*        <div class="col mt-4">*@
+        <div class="card mx-auto" style="width: 25rem; margin-bottom:15px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); ">
+            <div align="center" style="margin-top:15px; margin-bottom:15px;">
+            <h4 class="card-title" style="color:blue"><b>@product.Name</b></h4></div>
+            <img class="card-img-top" src="~/images/@product.Photo" height="350px" alt="Card image">
+                <div class="card-body">
+                    
+                    <p class="card-text" style="color:blue"><b>Price : ₹ @product.Price</b></p>
+@*                    <p class="card-text">Product Price : @product.Price</p>
+*@                  @*<a asp-page="cart" asp-page-handler="buynow" asp-route-id="@product.Id" >Buy Now</a>
+                    <button type="button" class="btn btn-primary" asp-page="cart" asp-page-handler="buynow" asp-route-id="@product.Id">Buy Now</button>
+                    *@<div align="right">
+                        <a class="btn btn-primary" asp-page="cart" asp-page-handler="buynow" asp-route-id="@product.Id" >Buy Now</a>
+                        </div>
+                </div>
+        </div>
+      @*  </div>*@
+    }
+</div>
+@*
+<h4>Product List</h4>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var product in Model.Products)
+    {
+        <tr align="center">
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td><img src="~/images/@product.Photo" width="120" height="100" /></td>
+            <td>$@product.Price</td>
+            <td>
+                <a asp-page="cart" asp-page-handler="buynow" asp-route-id="@product.Id" >Buy Now</a>
+            </td>
+        </tr>
+    }
+</table>*@
